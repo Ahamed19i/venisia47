@@ -11,7 +11,7 @@ export default function Reservation() {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const whatsappNumber = "221338233333";
+  const whatsappNumber = "221787942729";
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
