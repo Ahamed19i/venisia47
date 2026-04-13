@@ -26,7 +26,7 @@ const menuItems = [
     name: "L'Amazonia Chicken",
     description: "Poulet croustillant mariné, avocat frais, salade croquante, tomates et sauce aïoli légère.",
     price: "5.500 FCFA",
-    image: "https://images.unsplash.com/photo-1513185158878-8d8c1827003f?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 3,
