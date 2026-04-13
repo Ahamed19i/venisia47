@@ -1,3 +1,4 @@
+
 export default function Footer() {
   return (
     <footer className="bg-brand-black text-white py-24 border-t border-white/5 relative overflow-hidden">
@@ -20,10 +21,10 @@ export default function Footer() {
             />
           </div>
           <span className="text-3xl font-serif font-bold tracking-tighter text-white">
-            Venisia
+            Brasil Burger
           </span>
           <p className="text-gray-500 text-[10px] mt-3 uppercase tracking-[0.4em] font-bold">
-            Haute Gastronomie | Dakar
+            Le Meilleur Burger Gourmet | Dakar
           </p>
         </div>
         
@@ -35,7 +36,7 @@ export default function Footer() {
 
         <div className="flex flex-col items-center md:items-end gap-4">
           <p className="text-gray-600 text-[10px] uppercase tracking-[0.2em] font-medium text-center md:text-right">
-            © {new Date().getFullYear()} Venisia Dakar. <br />
+            © {new Date().getFullYear()} Brasil Burger Senegal. <br />
             Tous droits réservés.
           </p>
           <div className="h-[1px] w-12 bg-brand-red/30"></div>

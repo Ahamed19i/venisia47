@@ -1,74 +1,75 @@
+
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ShoppingCart, Palette } from 'lucide-react';
 import { cn } from '@/src/lib/utils';
 
 const categories = [
-  { id: 'bowls', name: 'Bowls à Table' },
-  { id: 'entrees', name: 'Entrées Raffinées' },
-  { id: 'plats', name: 'Plats Signature' },
-  { id: 'desserts', name: 'Douceurs Venisia' },
+  { id: 'burgers', name: 'Burgers Gourmets' },
+  { id: 'sides', name: 'Accompagnements' },
+  { id: 'drinks', name: 'Boissons' },
+  { id: 'desserts', name: 'Douceurs' },
 ];
 
 const menuItems = [
   {
     id: 1,
-    category: 'bowls',
-    name: "Le Bowl Venisia Royal",
-    description: "Un assortiment spectaculaire de saveurs méditerranéennes et locales, servi dans notre bowl signature à partager.",
-    price: "25.000 FCFA",
-    image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=800",
+    category: 'burgers',
+    name: "Le Brasil Burger",
+    description: "Pain brioché artisanal, steak haché 150g, cheddar fondu, bacon croustillant, oignons caramélisés et notre sauce secrète.",
+    price: "6.500 FCFA",
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 2,
-    category: 'bowls',
-    name: "Bowl Océanique",
-    description: "Sélection de fruits de mer frais, marinés aux herbes fines et agrumes, présenté pour 2 à 4 personnes.",
-    price: "35.000 FCFA",
-    image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800",
+    category: 'burgers',
+    name: "L'Amazonia Chicken",
+    description: "Poulet croustillant mariné, avocat frais, salade croquante, tomates et sauce aïoli légère.",
+    price: "5.500 FCFA",
+    image: "https://images.unsplash.com/photo-1513185158878-8d8c1827003f?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 3,
-    category: 'entrees',
-    name: "Carpaccio de Saint-Jacques",
-    description: "Fines lamelles de Saint-Jacques, huile de truffe et zestes de citron vert.",
-    price: "12.500 FCFA",
-    image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=800",
+    category: 'sides',
+    name: "Frites Maison Brasil",
+    description: "Frites fraîches coupées à la main, assaisonnées au sel de mer et herbes de Provence.",
+    price: "2.000 FCFA",
+    image: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 4,
-    category: 'plats',
-    name: "Filet de Bœuf Rossini",
-    description: "Cœur de filet de bœuf, foie gras poêlé, réduction au Porto et truffe noire.",
-    price: "22.000 FCFA",
-    image: "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&q=80&w=800",
+    category: 'burgers',
+    name: "Le Rio Double",
+    description: "Double steak haché, double cheddar, œuf au plat, jambon, salade et tomates. Le plus généreux !",
+    price: "8.500 FCFA",
+    image: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 5,
-    category: 'plats',
-    name: "Langouste Grillée Venisia",
-    description: "Langouste entière grillée au beurre de corail, servie avec un risotto au safran.",
-    price: "28.000 FCFA",
-    image: "https://images.unsplash.com/photo-1559742811-822873691df8?auto=format&fit=crop&q=80&w=800",
+    category: 'drinks',
+    name: "Guarana Antarctica",
+    description: "La boisson pétillante emblématique du Brésil, rafraîchissante et unique.",
+    price: "1.500 FCFA",
+    image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 6,
     category: 'desserts',
-    name: "Sphère Chocolat Or",
-    description: "Sphère en chocolat noir, cœur fondant praliné et feuilles d'or 24 carats.",
-    price: "8.500 FCFA",
-    image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&q=80&w=800",
+    name: "Duo de Brigadeiros",
+    description: "Truffes traditionnelles brésiliennes au chocolat et à la noix de coco.",
+    price: "3.000 FCFA",
+    image: "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&q=80&w=800",
   }
 ];
 
 export default function Menu() {
-  const [activeCategory, setActiveCategory] = useState('bowls');
+  const [activeCategory, setActiveCategory] = useState('burgers');
   const whatsappNumber = "221787942729";
 
   const filteredItems = menuItems.filter(item => item.category === activeCategory);
 
   const handleOrder = (itemName: string) => {
-    const message = encodeURIComponent(`Bonjour Venisia, je souhaite commander : ${itemName}`);
+    const message = encodeURIComponent(`Bonjour Brasil Burger, je souhaite commander : ${itemName}`);
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
   };
 
@@ -82,11 +83,11 @@ export default function Menu() {
             viewport={{ once: true }}
             className="text-4xl md:text-6xl font-serif mb-4 text-white tracking-tight"
           >
-            L'Expérience <span className="text-brand-red italic">Culinaire</span> Venisia
+            La Carte <span className="text-brand-red italic">Brasil</span> Burger
           </motion.h2>
           <div className="w-24 h-1 bg-brand-red mx-auto mb-6"></div>
           <p className="text-gray-400 max-w-xl mx-auto uppercase tracking-[0.3em] text-xs font-bold">
-            Une symphonie de saveurs haute couture
+            Le goût authentique du Brésil à chaque bouchée
           </p>
         </div>
 

@@ -1,3 +1,4 @@
+
 import { motion } from 'motion/react';
 import { Star, Quote } from 'lucide-react';
 
@@ -5,19 +6,19 @@ const reviews = [
   {
     id: 1,
     name: "Moussa D.",
-    text: "Le meilleur endroit du Plateau pour se détendre. L'ambiance lounge est exceptionnelle et le service est impeccable même à 3h du matin !",
+    text: "Le meilleur burger de Dakar ! La viande est juteuse, le pain est incroyablement moelleux et les saveurs sont au rendez-vous.",
     rating: 5
   },
   {
     id: 2,
     name: "Fatou K.",
-    text: "La cuisine libanaise est authentique. Leurs mezzés sont à tomber et le cadre est vraiment prestigieux. Une adresse incontournable à Dakar.",
+    text: "Une ambiance super sympa et des burgers vraiment originaux. Je recommande vivement le Brasil Burger, c'est une tuerie !",
     rating: 5
   },
   {
     id: 3,
     name: "Abdou L.",
-    text: "Superbe terrasse, les chichas sont de loin les meilleures de la ville. Idéal pour finir la soirée en beauté après un bon dîner.",
+    text: "Service rapide et burgers délicieux. Le Guarana Antarctica est un vrai plus pour l'expérience brésilienne. Incontournable !",
     rating: 5
   }
 ];

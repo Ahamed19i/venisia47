@@ -1,5 +1,6 @@
+
 {
-  "name": "Venisia - Restaurant & Lounge Dakar",
-  "description": "L'élégance et le raffinement au cœur de Dakar. Restaurant haut de gamme, Lounge et Bar. Découvrez nos célèbres 'Bowls à Table' et une cuisine internationale d'exception.",
+  "name": "Brasil Burger Senegal - Le Goût du Brésil à Dakar",
+  "description": "Découvrez les meilleurs burgers gourmets de Dakar chez Brasil Burger. Une fusion unique de saveurs brésiliennes et de burgers généreux. Livraison et service sur place.",
   "requestFramePermissions": ["geolocation"]
 }

@@ -1,53 +1,54 @@
+
 import { motion } from 'motion/react';
 
 const galleryImages = [
   {
     id: 1,
-    title: "Façade Venisia",
+    title: "Façade Brasil Burger",
     category: "Extérieur",
-    image: "https://picsum.photos/seed/venisia-terrace/800/600",
+    image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 2,
-    title: "L'Art du Bowl",
+    title: "Le Brasil Classique",
     category: "Signature",
-    image: "https://picsum.photos/seed/venisia-bowl-art/1200/600",
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=1200",
   },
   {
     id: 3,
-    title: "Espace Lounge",
-    category: "Lounge",
-    image: "https://picsum.photos/seed/venisia-lounge-blue/800/600",
+    title: "Ambiance Chaleureuse",
+    category: "Intérieur",
+    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 4,
-    title: "Célébrations Exclusives",
-    category: "Événements",
-    image: "https://picsum.photos/seed/venisia-party-night/800/600",
+    title: "Préparation Artisanale",
+    category: "Cuisine",
+    image: "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 5,
-    title: "Détails de Luxe",
-    category: "Intérieur",
-    image: "https://picsum.photos/seed/venisia-luxury-details/800/600",
+    title: "Détails Gourmands",
+    category: "Gourmet",
+    image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 6,
-    title: "Gastronomie Fine",
-    category: "Cuisine",
-    image: "https://picsum.photos/seed/venisia-fine-dining/1200/600",
+    title: "Notre Équipe",
+    category: "Staff",
+    image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=1200",
   },
   {
     id: 7,
-    title: "Cocktails Signature",
+    title: "Boissons Fraîches",
     category: "Bar",
-    image: "https://picsum.photos/seed/venisia-cocktails/800/600",
+    image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 8,
-    title: "Terrasse Privée",
-    category: "Lounge",
-    image: "https://picsum.photos/seed/venisia-terrace/800/600",
+    title: "Terrasse Conviviale",
+    category: "Extérieur",
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800",
   }
 ];
 
@@ -60,7 +61,7 @@ export default function Gallery() {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-brand-gold font-bold uppercase tracking-[0.3em] text-xs mb-4 block"
+            className="text-brand-red font-bold uppercase tracking-[0.3em] text-xs mb-4 block"
           >
             Immersion Visuelle
           </motion.span>
@@ -70,9 +71,9 @@ export default function Gallery() {
             viewport={{ once: true }}
             className="text-4xl md:text-6xl font-serif mb-6 tracking-tighter"
           >
-            L'Univers <span className="text-brand-red italic">Venisia</span>
+            L'Univers <span className="text-brand-red italic">Brasil</span> Burger
           </motion.h2>
-          <div className="w-20 h-1 bg-brand-gold mx-auto rounded-full" />
+          <div className="w-20 h-1 bg-brand-red mx-auto rounded-full" />
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">

@@ -1,3 +1,4 @@
+
 import { motion } from 'motion/react';
 import { Heart, Users, Clock, MapPin } from 'lucide-react';
 
@@ -21,14 +22,14 @@ export default function About() {
               className="grid grid-cols-2 gap-4"
             >
               <img
-                src="https://picsum.photos/seed/venisia-interior/400/500"
-                alt="Ambiance Venisia"
+                src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&q=80&w=400"
+                alt="Cuisine Brasil Burger"
                 className="rounded-3xl shadow-lg transform translate-y-8"
                 referrerPolicy="no-referrer"
               />
               <img
-                src="https://picsum.photos/seed/venisia-bowl-presentation/400/500"
-                alt="L'Art du Bowl à Table"
+                src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&q=80&w=400"
+                alt="Burger Gourmet"
                 className="rounded-3xl shadow-lg"
                 referrerPolicy="no-referrer"
               />
@@ -42,15 +43,15 @@ export default function About() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl mb-8">
-              L'Élégance <br />
-              <span className="text-brand-red italic">au Cœur de Dakar</span>
+              La Passion du <br />
+              <span className="text-brand-red italic">Vrai Burger Gourmet</span>
             </h2>
             <div className="space-y-6 text-gray-600 leading-relaxed">
               <p>
-                Venisia est une destination gastronomique d'exception, où le luxe rencontre la convivialité. Situé dans l'un des quartiers les plus prestigieux de Dakar, notre établissement est le rendez-vous incontournable des amateurs de haute cuisine.
+                Brasil Burger est né de la passion pour la culture brésilienne et l'amour des burgers généreux. Nous avons voulu apporter à Dakar une expérience unique, où chaque burger raconte une histoire de saveurs authentiques et d'ingrédients de qualité.
               </p>
               <p>
-                Nous sommes fiers de vous présenter notre concept unique de "Bowl à Table", une expérience partagée qui allie esthétique et saveurs raffinées. Chez Venisia, chaque détail est pensé pour vous offrir un moment hors du temps, que ce soit pour un dîner intime ou une soirée lounge sophistiquée.
+                Notre secret ? Une viande sélectionnée avec soin, des pains briochés artisanaux et des sauces maison qui font toute la différence. Chez Brasil Burger, nous croyons que la gourmandise est un art qui se partage dans une ambiance conviviale et décontractée.
               </p>
             </div>
 

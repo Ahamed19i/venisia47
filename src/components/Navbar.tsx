@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, UtensilsCrossed } from 'lucide-react';
@@ -45,7 +46,7 @@ export default function Navbar() {
             />
           </div>
           <span className="text-2xl font-serif font-bold tracking-tighter text-brand-black group-hover:text-brand-red transition-colors duration-300">
-            Venisia
+            Brasil Burger
           </span>
         </a>
 

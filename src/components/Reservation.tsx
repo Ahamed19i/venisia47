@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Calendar, Clock, Users, Send, CheckCircle2 } from 'lucide-react';
@@ -17,7 +18,7 @@ export default function Reservation() {
     e.preventDefault();
     
     const message = encodeURIComponent(
-      `Bonjour Venisia, je souhaite faire une réservation :\n\n` +
+      `Bonjour Brasil Burger, je souhaite faire une réservation :\n\n` +
       `👤 Nom : ${formData.name}\n` +
       `📅 Date : ${formData.date}\n` +
       `🕒 Heure : ${formData.time}\n` +
@@ -38,7 +39,7 @@ export default function Reservation() {
     <section id="reservation" className="py-24 bg-brand-black text-white relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-brand-gold rounded-full blur-[120px]" />
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-brand-red rounded-full blur-[120px]" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-brand-red rounded-full blur-[120px]" />
       </div>
 
@@ -51,35 +52,35 @@ export default function Reservation() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-brand-gold font-bold uppercase tracking-[0.3em] text-xs mb-4 block">
-              Expérience Exclusive
+            <span className="text-brand-red font-bold uppercase tracking-[0.3em] text-xs mb-4 block">
+              Expérience Conviviale
             </span>
             <h2 className="text-5xl md:text-6xl font-serif mb-8 leading-tight">
               Réservez votre <br />
-              <span className="text-brand-gold italic underline decoration-white/10 underline-offset-8">Table de Prestige</span>
+              <span className="text-brand-red italic underline decoration-white/10 underline-offset-8">Table Brasil Burger</span>
             </h2>
             <p className="text-gray-400 text-lg mb-10 leading-relaxed max-w-lg">
-              Assurez-vous une place au cœur de Dakar. Que ce soit pour un dîner d'affaires, une soirée entre amis ou un moment lounge, nous préparons votre accueil avec soin.
+              Réservez votre table pour une expérience burger inoubliable. En famille ou entre amis, nous vous accueillons avec le sourire et les meilleurs burgers de Dakar.
             </p>
             
             <div className="space-y-6">
               <div className="flex items-center gap-4 group">
-                <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-brand-gold transition-colors">
-                  <CheckCircle2 className="text-brand-gold" size={20} />
+                <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-brand-red transition-colors">
+                  <CheckCircle2 className="text-brand-red" size={20} />
                 </div>
                 <p className="text-gray-300 font-medium">Confirmation instantanée via WhatsApp</p>
               </div>
               <div className="flex items-center gap-4 group">
-                <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-brand-gold transition-colors">
-                  <CheckCircle2 className="text-brand-gold" size={20} />
+                <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-brand-red transition-colors">
+                  <CheckCircle2 className="text-brand-red" size={20} />
                 </div>
-                <p className="text-gray-300 font-medium">Service voiturier disponible</p>
+                <p className="text-gray-300 font-medium">Burgers frais préparés à la commande</p>
               </div>
               <div className="flex items-center gap-4 group">
-                <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-brand-gold transition-colors">
-                  <CheckCircle2 className="text-brand-gold" size={20} />
+                <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-brand-red transition-colors">
+                  <CheckCircle2 className="text-brand-red" size={20} />
                 </div>
-                <p className="text-gray-300 font-medium">Espace VIP sur demande</p>
+                <p className="text-gray-300 font-medium">Ambiance chaleureuse et décontractée</p>
               </div>
             </div>
           </motion.div>
@@ -93,16 +94,16 @@ export default function Reservation() {
           >
             {isSubmitted ? (
               <div className="text-center py-12">
-                <div className="w-20 h-20 bg-brand-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <CheckCircle2 className="text-brand-gold" size={40} />
+                <div className="w-20 h-20 bg-brand-red/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <CheckCircle2 className="text-brand-red" size={40} />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white">Demande Envoyée !</h3>
                 <p className="text-gray-400">
-                  Nous avons ouvert WhatsApp pour finaliser votre réservation. À très bientôt chez Venisia.
+                  Nous avons ouvert WhatsApp pour finaliser votre réservation. À très bientôt chez Brasil Burger.
                 </p>
                 <button 
                   onClick={() => setIsSubmitted(false)}
-                  className="mt-8 text-brand-gold font-bold hover:underline"
+                  className="mt-8 text-brand-red font-bold hover:underline"
                 >
                   Faire une autre réservation
                 </button>
@@ -116,7 +117,7 @@ export default function Reservation() {
                       required
                       type="text"
                       placeholder="Votre nom"
-                      className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-12 focus:outline-none focus:border-brand-gold transition-colors placeholder:text-gray-600"
+                      className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-12 focus:outline-none focus:border-brand-red transition-colors placeholder:text-gray-600"
                       value={formData.name}
                       onChange={(e) => setFormData({...formData, name: e.target.value})}
                     />
@@ -131,7 +132,7 @@ export default function Reservation() {
                       <input
                         required
                         type="date"
-                        className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-12 focus:outline-none focus:border-brand-gold transition-colors text-white [color-scheme:dark]"
+                        className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-12 focus:outline-none focus:border-brand-red transition-colors text-white [color-scheme:dark]"
                         value={formData.date}
                         onChange={(e) => setFormData({...formData, date: e.target.value})}
                       />
@@ -144,7 +145,7 @@ export default function Reservation() {
                       <input
                         required
                         type="time"
-                        className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-12 focus:outline-none focus:border-brand-gold transition-colors text-white [color-scheme:dark]"
+                        className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-12 focus:outline-none focus:border-brand-red transition-colors text-white [color-scheme:dark]"
                         value={formData.time}
                         onChange={(e) => setFormData({...formData, time: e.target.value})}
                       />
@@ -156,7 +157,7 @@ export default function Reservation() {
                 <div className="space-y-2">
                   <label className="text-xs font-bold uppercase tracking-widest text-gray-500 ml-1">Nombre de Personnes</label>
                   <select
-                    className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-6 focus:outline-none focus:border-brand-gold transition-colors text-white appearance-none cursor-pointer"
+                    className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-6 focus:outline-none focus:border-brand-red transition-colors text-white appearance-none cursor-pointer"
                     value={formData.guests}
                     onChange={(e) => setFormData({...formData, guests: e.target.value})}
                   >
@@ -169,7 +170,7 @@ export default function Reservation() {
 
                 <button
                   type="submit"
-                  className="w-full bg-brand-gold text-brand-black py-5 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 hover:bg-white transition-all duration-300 shadow-[0_10px_30px_rgba(234,179,8,0.2)]"
+                  className="w-full bg-brand-red text-white py-5 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 hover:bg-white hover:text-brand-red transition-all duration-300 shadow-[0_10px_30px_rgba(227,24,55,0.2)]"
                 >
                   <Send size={20} />
                   Confirmer la Réservation
