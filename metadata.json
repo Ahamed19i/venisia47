@@ -1,6 +1,5 @@
-
 {
-  "name": "Brasil Burger Senegal - Le Goût du Brésil à Dakar",
-  "description": "Découvrez les meilleurs burgers gourmets de Dakar chez Brasil Burger. Une fusion unique de saveurs brésiliennes et de burgers généreux. Livraison et service sur place.",
+  "name": "Caramel Dakar - Pâtisserie & Restaurant de Prestige",
+  "description": "L'excellence de la pâtisserie fine et de la gastronomie au cœur de Dakar. Découvrez un cadre raffiné et des saveurs d'exception.",
   "requestFramePermissions": ["geolocation"]
 }

@@ -1,11 +1,10 @@
-
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import { Phone, Mail, MapPin, Instagram, Facebook, Clock, CreditCard, Copy, Check } from 'lucide-react';
 
 export default function Contact() {
   const [copied, setCopied] = useState(false);
-  const paymentNumber = "+221 78 794 27 29";
+  const paymentNumber = "+221 33 842 34 35";
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(paymentNumber);
@@ -34,12 +33,12 @@ export default function Contact() {
             </div>
             
             <h2 className="text-5xl md:text-7xl font-serif mb-10 text-white tracking-tight">
-              Venez nous <br />
-              <span className="text-brand-red italic text-6xl md:text-8xl">voir</span>
+              Nous <br />
+              <span className="text-brand-red italic text-6xl md:text-8xl">Rejoindre</span>
             </h2>
             
             <p className="text-gray-400 mb-16 max-w-md leading-relaxed text-lg">
-              Le goût authentique du Brésil débarque à Dakar. Venez savourer nos burgers gourmets préparés avec passion.
+              L'excellence de la pâtisserie fine et de la gastronomie vous attend au cœur de Dakar. Un cadre raffiné pour des moments inoubliables.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-12">
@@ -50,7 +49,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-[10px] uppercase tracking-widest text-gray-500 font-bold mb-1">Adresse</p>
-                    <p className="text-white font-medium">Avenue Cheikh Anta Diop, Dakar, Sénégal</p>
+                    <p className="text-white font-medium">Rue de Louga, Dakar, Sénégal</p>
                   </div>
                 </div>
 
@@ -60,7 +59,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-[10px] uppercase tracking-widest text-gray-500 font-bold mb-1">Téléphone</p>
-                    <p className="text-white font-medium">+221 78 794 27 29</p>
+                    <p className="text-white font-medium">+221 33 842 34 35</p>
                   </div>
                 </div>
               </div>
@@ -92,18 +91,18 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-[10px] uppercase tracking-widest text-gray-500 font-bold mb-1">Horaires</p>
-                    <p className="text-brand-red font-bold">Service Continu</p>
-                    <p className="text-[10px] text-gray-500">Ouvert tard | Lounge</p>
+                    <p className="text-brand-red font-bold">07:00 — 01:00</p>
+                    <p className="text-[10px] text-gray-500">Ouvert tous les jours</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="flex gap-6 mt-20">
-              <a href="https://www.facebook.com/profile.php?id=100051976068913" target="_blank" rel="noopener noreferrer" className="w-14 h-14 bg-white/5 rounded-2xl border border-white/10 flex items-center justify-center hover:bg-brand-red hover:border-brand-red transition-all duration-500 group">
+              <a href="https://www.facebook.com/carameldakar" target="_blank" rel="noopener noreferrer" className="w-14 h-14 bg-white/5 rounded-2xl border border-white/10 flex items-center justify-center hover:bg-brand-red hover:border-brand-red transition-all duration-500 group">
                 <Facebook size={22} className="group-hover:scale-110 transition-transform" />
               </a>
-              <a href="https://www.instagram.com/brasilburger_senegal/" target="_blank" rel="noopener noreferrer" className="w-14 h-14 bg-white/5 rounded-2xl border border-white/10 flex items-center justify-center hover:bg-brand-red hover:border-brand-red transition-all duration-500 group">
+              <a href="https://www.instagram.com/carameldakar/" target="_blank" rel="noopener noreferrer" className="w-14 h-14 bg-white/5 rounded-2xl border border-white/10 flex items-center justify-center hover:bg-brand-red hover:border-brand-red transition-all duration-500 group">
                 <Instagram size={22} className="group-hover:scale-110 transition-transform" />
               </a>
             </div>
@@ -118,7 +117,7 @@ export default function Contact() {
           >
             <div className="h-[500px] lg:h-[600px] rounded-[3rem] overflow-hidden grayscale hover:grayscale-0 transition-all duration-1000 border border-white/10 shadow-2xl">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.1!2d-17.4587845!3d14.6976384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1731b671f24c7%3A0xd3bb7eae885f9e94!2sBrasil%20Burger%20Senegal!5e0!3m2!1sfr!2ssn!4v1711982439000!5m2!1sfr!2ssn"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.1!2d-17.4552144!3d14.6802869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1736181487b43%3A0x63eafd7ffe1a466b!2sCaramel%20Dakar!5e0!3m2!1sfr!2ssn!4v1711982439000!5m2!1sfr!2ssn"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

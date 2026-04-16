@@ -1,75 +1,74 @@
-
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ShoppingCart, Palette } from 'lucide-react';
 import { cn } from '@/src/lib/utils';
 
 const categories = [
-  { id: 'burgers', name: 'Burgers Gourmets' },
-  { id: 'sides', name: 'Accompagnements' },
-  { id: 'drinks', name: 'Boissons' },
-  { id: 'desserts', name: 'Douceurs' },
+  { id: 'patisseries', name: 'Pâtisseries Fines' },
+  { id: 'glaces', name: 'Glaces Artisanales' },
+  { id: 'sale', name: 'Côté Salé' },
+  { id: 'boissons', name: 'Boissons & Cafés' },
 ];
 
 const menuItems = [
   {
     id: 1,
-    category: 'burgers',
-    name: "Le Brasil Burger",
-    description: "Pain brioché artisanal, steak haché 150g, cheddar fondu, bacon croustillant, oignons caramélisés et notre sauce secrète.",
-    price: "6.500 FCFA",
-    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=800",
+    category: 'patisseries',
+    name: "L'Éclair au Caramel",
+    description: "Pâte à chou légère, crème onctueuse au caramel beurre salé et glaçage miroir.",
+    price: "3.500 FCFA",
+    image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 2,
-    category: 'burgers',
-    name: "L'Amazonia Chicken",
-    description: "Poulet croustillant mariné, avocat frais, salade croquante, tomates et sauce aïoli légère.",
-    price: "5.500 FCFA",
-    image: "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&q=80&w=800",
+    category: 'glaces',
+    name: "La Pistache Royale",
+    description: "Glace artisanale à la pistache d'Iran, éclats de pistaches torréfiées.",
+    price: "4.500 FCFA",
+    image: "https://images.unsplash.com/photo-1501443762994-82bd5dabb892?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 3,
-    category: 'sides',
-    name: "Frites Maison Brasil",
-    description: "Frites fraîches coupées à la main, assaisonnées au sel de mer et herbes de Provence.",
-    price: "2.000 FCFA",
-    image: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&q=80&w=800",
+    category: 'sale',
+    name: "Croque Monsieur Prestige",
+    description: "Pain de mie artisanal, jambon de qualité, béchamel onctueuse et fromage affiné.",
+    price: "7.500 FCFA",
+    image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 4,
-    category: 'burgers',
-    name: "Le Rio Double",
-    description: "Double steak haché, double cheddar, œuf au plat, jambon, salade et tomates. Le plus généreux !",
-    price: "8.500 FCFA",
-    image: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&q=80&w=800",
+    category: 'patisseries',
+    name: "Mille-Feuille Vanille",
+    description: "Feuilletage inversé croustillant, crème diplomate à la vanille de Madagascar.",
+    price: "4.000 FCFA",
+    image: "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 5,
-    category: 'drinks',
-    name: "Guarana Antarctica",
-    description: "La boisson pétillante emblématique du Brésil, rafraîchissante et unique.",
-    price: "1.500 FCFA",
-    image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&q=80&w=800",
+    category: 'boissons',
+    name: "Cappuccino Caramel",
+    description: "Espresso intense, mousse de lait veloutée et filet de caramel maison.",
+    price: "3.000 FCFA",
+    image: "https://images.unsplash.com/photo-1541167760496-162955ed8a9f?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 6,
-    category: 'desserts',
-    name: "Duo de Brigadeiros",
-    description: "Truffes traditionnelles brésiliennes au chocolat et à la noix de coco.",
-    price: "3.000 FCFA",
-    image: "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&q=80&w=800",
+    category: 'glaces',
+    name: "Sorbet Framboise",
+    description: "Sorbet plein fruit à la framboise sauvage, fraîcheur intense.",
+    price: "4.000 FCFA",
+    image: "https://images.unsplash.com/photo-1558538337-aab544368de8?auto=format&fit=crop&q=80&w=800",
   }
 ];
 
 export default function Menu() {
-  const [activeCategory, setActiveCategory] = useState('burgers');
-  const whatsappNumber = "221787942729";
+  const [activeCategory, setActiveCategory] = useState('patisseries');
+  const whatsappNumber = "221338423435";
 
   const filteredItems = menuItems.filter(item => item.category === activeCategory);
 
   const handleOrder = (itemName: string) => {
-    const message = encodeURIComponent(`Bonjour Brasil Burger, je souhaite commander : ${itemName}`);
+    const message = encodeURIComponent(`Bonjour Caramel Dakar, je souhaite commander : ${itemName}`);
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
   };
 
@@ -83,11 +82,11 @@ export default function Menu() {
             viewport={{ once: true }}
             className="text-4xl md:text-6xl font-serif mb-4 text-white tracking-tight"
           >
-            La Carte <span className="text-brand-red italic">Brasil</span> Burger
+            La Carte <span className="text-brand-red italic">Caramel</span> Dakar
           </motion.h2>
           <div className="w-24 h-1 bg-brand-red mx-auto mb-6"></div>
           <p className="text-gray-400 max-w-xl mx-auto uppercase tracking-[0.3em] text-xs font-bold">
-            Le goût authentique du Brésil à chaque bouchée
+            L'excellence du goût dans chaque création
           </p>
         </div>
 
@@ -144,7 +143,7 @@ export default function Menu() {
                   </p>
                   <button
                     onClick={() => handleOrder(item.name)}
-                    className="w-full py-4 rounded-2xl bg-white/5 border border-white/10 text-white font-bold flex items-center justify-center gap-3 hover:bg-brand-red hover:border-brand-red hover:shadow-[0_10px_40px_rgba(227,24,55,0.4)] transition-all duration-500 group/btn relative overflow-hidden"
+                    className="w-full py-4 rounded-2xl bg-white/5 border border-white/10 text-white font-bold flex items-center justify-center gap-3 hover:bg-brand-red hover:border-brand-red hover:shadow-[0_10px_40px_rgba(153,27,27,0.4)] transition-all duration-500 group/btn relative overflow-hidden"
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
                     <Palette size={18} className="group-hover/btn:scale-110 transition-transform" />

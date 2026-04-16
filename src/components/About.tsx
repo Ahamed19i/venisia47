@@ -1,4 +1,3 @@
-
 import { motion } from 'motion/react';
 import { Heart, Users, Clock, MapPin } from 'lucide-react';
 
@@ -22,14 +21,14 @@ export default function About() {
               className="grid grid-cols-2 gap-4"
             >
               <img
-                src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&q=80&w=400"
-                alt="Cuisine Brasil Burger"
+                src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=400"
+                alt="Intérieur Caramel Dakar"
                 className="rounded-3xl shadow-lg transform translate-y-8"
                 referrerPolicy="no-referrer"
               />
               <img
-                src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&q=80&w=400"
-                alt="Burger Gourmet"
+                src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=400"
+                alt="Pâtisserie Fine"
                 className="rounded-3xl shadow-lg"
                 referrerPolicy="no-referrer"
               />
@@ -43,15 +42,15 @@ export default function About() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl mb-8">
-              La Passion du <br />
-              <span className="text-brand-red italic">Vrai Burger Gourmet</span>
+              L'Excellence au <br />
+              <span className="text-brand-red italic">Cœur de Dakar</span>
             </h2>
             <div className="space-y-6 text-gray-600 leading-relaxed">
               <p>
-                Brasil Burger est né de la passion pour la culture brésilienne et l'amour des burgers généreux. Nous avons voulu apporter à Dakar une expérience unique, où chaque burger raconte une histoire de saveurs authentiques et d'ingrédients de qualité.
+                Caramel Dakar est une institution dédiée à l'art de la pâtisserie fine et de la gastronomie. Depuis notre ouverture, nous nous efforçons de créer un lieu où le raffinement et le goût se rencontrent pour offrir des moments d'exception à nos clients.
               </p>
               <p>
-                Notre secret ? Une viande sélectionnée avec soin, des pains briochés artisanaux et des sauces maison qui font toute la différence. Chez Brasil Burger, nous croyons que la gourmandise est un art qui se partage dans une ambiance conviviale et décontractée.
+                Chaque création est le fruit d'un savoir-faire artisanal rigoureux, utilisant les meilleurs ingrédients locaux et internationaux. Que ce soit pour un petit-déjeuner élégant, un déjeuner d'affaires ou une pause gourmande, Caramel Dakar vous accueille dans un cadre sophistiqué et chaleureux.
               </p>
             </div>
 

@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, UtensilsCrossed } from 'lucide-react';
@@ -34,19 +33,21 @@ export default function Navbar() {
           <div className="bg-brand-red p-1.5 rounded-2xl rotate-3 group-hover:rotate-0 transition-all duration-500 overflow-hidden w-11 h-11 flex items-center justify-center shadow-lg group-hover:shadow-brand-red/20">
             <img 
               src="/logo.png" 
-              alt="Venisia Logo" 
+              alt="Caramel Dakar Logo" 
               className="w-full h-full object-contain"
+              referrerPolicy="no-referrer"
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 e.currentTarget.parentElement?.classList.add('p-2');
-                const icon = document.createElement('div');
-                icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-utensils-crossed text-white"><path d="m16 2-2.3 2.3a3 3 0 0 0 0 4.2l1.8 1.8a3 3 0 0 0 4.2 0L22 8Z"/><path d="M15 15 3.3 3.3a4.2 4.2 0 0 0 0 6l7.3 7.3c.7.7 2 .7 2.8 0L15 15Z"/><path d="m18 8 4 4"/><path d="m2 2 8 8"/><path d="m21 2-5 5"/><path d="m22 21-5-5"/><path d="m2 22 5-5"/><path d="m12 12 5 5"/></svg>';
-                e.currentTarget.parentElement?.appendChild(icon.firstChild as Node);
+                const text = document.createElement('span');
+                text.className = 'text-white font-bold text-xl';
+                text.innerText = 'C';
+                e.currentTarget.parentElement?.appendChild(text);
               }}
             />
           </div>
           <span className="text-2xl font-serif font-bold tracking-tighter text-brand-black group-hover:text-brand-red transition-colors duration-300">
-            Brasil Burger
+            Caramel Dakar
           </span>
         </a>
 

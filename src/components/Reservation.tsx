@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Calendar, Clock, Users, Send, CheckCircle2 } from 'lucide-react';
@@ -12,13 +11,13 @@ export default function Reservation() {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const whatsappNumber = "221787942729";
+  const whatsappNumber = "221338423435";
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
     const message = encodeURIComponent(
-      `Bonjour Brasil Burger, je souhaite faire une réservation :\n\n` +
+      `Bonjour Caramel Dakar, je souhaite faire une réservation :\n\n` +
       `👤 Nom : ${formData.name}\n` +
       `📅 Date : ${formData.date}\n` +
       `🕒 Heure : ${formData.time}\n` +
@@ -53,14 +52,14 @@ export default function Reservation() {
             viewport={{ once: true }}
           >
             <span className="text-brand-red font-bold uppercase tracking-[0.3em] text-xs mb-4 block">
-              Expérience Conviviale
+              Expérience Exclusive
             </span>
             <h2 className="text-5xl md:text-6xl font-serif mb-8 leading-tight">
               Réservez votre <br />
-              <span className="text-brand-red italic underline decoration-white/10 underline-offset-8">Table Brasil Burger</span>
+              <span className="text-brand-red italic underline decoration-white/10 underline-offset-8">Table de Prestige</span>
             </h2>
             <p className="text-gray-400 text-lg mb-10 leading-relaxed max-w-lg">
-              Réservez votre table pour une expérience burger inoubliable. En famille ou entre amis, nous vous accueillons avec le sourire et les meilleurs burgers de Dakar.
+              Assurez-vous une place dans notre cadre raffiné pour un moment de gourmandise inoubliable. Caramel Dakar vous accueille pour vos rendez-vous d'exception.
             </p>
             
             <div className="space-y-6">
@@ -68,19 +67,19 @@ export default function Reservation() {
                 <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-brand-red transition-colors">
                   <CheckCircle2 className="text-brand-red" size={20} />
                 </div>
-                <p className="text-gray-300 font-medium">Confirmation instantanée via WhatsApp</p>
+                <p className="text-gray-300 font-medium">Confirmation prioritaire via WhatsApp</p>
               </div>
               <div className="flex items-center gap-4 group">
                 <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-brand-red transition-colors">
                   <CheckCircle2 className="text-brand-red" size={20} />
                 </div>
-                <p className="text-gray-300 font-medium">Burgers frais préparés à la commande</p>
+                <p className="text-gray-300 font-medium">Pâtisseries fines et gastronomie d'exception</p>
               </div>
               <div className="flex items-center gap-4 group">
                 <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-brand-red transition-colors">
                   <CheckCircle2 className="text-brand-red" size={20} />
                 </div>
-                <p className="text-gray-300 font-medium">Ambiance chaleureuse et décontractée</p>
+                <p className="text-gray-300 font-medium">Cadre sophistiqué au cœur de Dakar</p>
               </div>
             </div>
           </motion.div>
@@ -99,7 +98,7 @@ export default function Reservation() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white">Demande Envoyée !</h3>
                 <p className="text-gray-400">
-                  Nous avons ouvert WhatsApp pour finaliser votre réservation. À très bientôt chez Brasil Burger.
+                  Nous avons ouvert WhatsApp pour finaliser votre réservation. À très bientôt chez Caramel Dakar.
                 </p>
                 <button 
                   onClick={() => setIsSubmitted(false)}
@@ -170,7 +169,7 @@ export default function Reservation() {
 
                 <button
                   type="submit"
-                  className="w-full bg-brand-red text-white py-5 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 hover:bg-white hover:text-brand-red transition-all duration-300 shadow-[0_10px_30px_rgba(227,24,55,0.2)]"
+                  className="w-full bg-brand-red text-white py-5 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 hover:bg-white hover:text-brand-red transition-all duration-300 shadow-[0_10px_30px_rgba(153,27,27,0.2)]"
                 >
                   <Send size={20} />
                   Confirmer la Réservation

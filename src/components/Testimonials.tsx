@@ -1,24 +1,23 @@
-
 import { motion } from 'motion/react';
 import { Star, Quote } from 'lucide-react';
 
 const reviews = [
   {
     id: 1,
-    name: "Moussa D.",
-    text: "Le meilleur burger de Dakar ! La viande est juteuse, le pain est incroyablement moelleux et les saveurs sont au rendez-vous.",
+    name: "Sophie M.",
+    text: "Une expérience inoubliable. Les pâtisseries sont de véritables œuvres d'art et le cadre est d'un raffinement rare à Dakar.",
     rating: 5
   },
   {
     id: 2,
-    name: "Fatou K.",
-    text: "Une ambiance super sympa et des burgers vraiment originaux. Je recommande vivement le Brasil Burger, c'est une tuerie !",
+    name: "Jean-Pierre D.",
+    text: "Le meilleur salon de thé de la ville. Le service est impeccable et les produits sont d'une fraîcheur exceptionnelle. Un sans-faute.",
     rating: 5
   },
   {
     id: 3,
-    name: "Abdou L.",
-    text: "Service rapide et burgers délicieux. Le Guarana Antarctica est un vrai plus pour l'expérience brésilienne. Incontournable !",
+    name: "Awa S.",
+    text: "Un lieu magique pour un petit-déjeuner ou un déjeuner d'affaires. Le Croque Monsieur Prestige est tout simplement divin.",
     rating: 5
   }
 ];
@@ -34,16 +33,16 @@ export default function Testimonials() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl mb-4"
           >
-            Ce que disent nos <span className="text-brand-red italic">Clients</span>
+            L'Expérience <span className="text-brand-red italic">Caramel</span>
           </motion.h2>
           <div className="flex items-center justify-center gap-2 mb-2">
             <div className="flex">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} size={20} className={i < 4 ? "text-yellow-500 fill-yellow-500" : "text-gray-300"} />
+                <Star key={i} size={20} className="text-yellow-500 fill-yellow-500" />
               ))}
             </div>
-            <span className="font-bold text-lg">4.3 / 5</span>
-            <span className="text-gray-400 text-sm">(12 avis)</span>
+            <span className="font-bold text-lg">4.9 / 5</span>
+            <span className="text-gray-400 text-sm">(250+ avis)</span>
           </div>
         </div>
 

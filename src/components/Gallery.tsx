@@ -1,52 +1,51 @@
-
 import { motion } from 'motion/react';
 
 const galleryImages = [
   {
     id: 1,
-    title: "Façade Brasil Burger",
-    category: "Extérieur",
-    image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80&w=800",
+    title: "Le Salon de Thé",
+    category: "Intérieur",
+    image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 2,
-    title: "Le Brasil Classique",
+    title: "Pâtisseries Fines",
     category: "Signature",
-    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=1200",
+    image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=1200",
   },
   {
     id: 3,
-    title: "Ambiance Chaleureuse",
-    category: "Intérieur",
-    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=800",
+    title: "Cadre Raffiné",
+    category: "Ambiance",
+    image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 4,
-    title: "Préparation Artisanale",
-    category: "Cuisine",
-    image: "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&q=80&w=800",
+    title: "L'Art du Café",
+    category: "Barista",
+    image: "https://images.unsplash.com/photo-1541167760496-162955ed8a9f?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 5,
-    title: "Détails Gourmands",
+    title: "Détails Sucrés",
     category: "Gourmet",
-    image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 6,
-    title: "Notre Équipe",
-    category: "Staff",
-    image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=1200",
+    title: "Service d'Exception",
+    category: "Prestige",
+    image: "https://images.unsplash.com/photo-1550966841-3ee5ad60d0d9?auto=format&fit=crop&q=80&w=1200",
   },
   {
     id: 7,
-    title: "Boissons Fraîches",
-    category: "Bar",
-    image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=800",
+    title: "Macarons Maison",
+    category: "Douceurs",
+    image: "https://images.unsplash.com/photo-1558326567-98ae2405596b?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 8,
-    title: "Terrasse Conviviale",
+    title: "Terrasse Ombragée",
     category: "Extérieur",
     image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800",
   }
@@ -71,7 +70,7 @@ export default function Gallery() {
             viewport={{ once: true }}
             className="text-4xl md:text-6xl font-serif mb-6 tracking-tighter"
           >
-            L'Univers <span className="text-brand-red italic">Brasil</span> Burger
+            L'Univers <span className="text-brand-red italic">Caramel</span> Dakar
           </motion.h2>
           <div className="w-20 h-1 bg-brand-red mx-auto rounded-full" />
         </div>

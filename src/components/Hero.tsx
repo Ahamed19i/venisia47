@@ -1,4 +1,3 @@
-
 import { motion } from 'motion/react';
 import { ArrowRight, ShoppingBag } from 'lucide-react';
 
@@ -17,7 +16,7 @@ export default function Hero() {
         
         {/* Animated Shapes */}
         <div className="absolute top-1/4 -left-20 w-96 h-96 bg-brand-red/5 rounded-full blur-[120px] animate-pulse" />
-        <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-brand-gold/5 rounded-full blur-[120px] animate-pulse delay-1000" />
+        <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-brand-red/5 rounded-full blur-[120px] animate-pulse delay-1000" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center relative z-10">
@@ -34,15 +33,15 @@ export default function Hero() {
           >
             <div className="h-[1px] w-12 bg-brand-red"></div>
             <span className="text-brand-red text-[10px] font-bold uppercase tracking-[0.4em]">
-              Le Meilleur Burger Gourmet | Dakar
+              Pâtisserie & Restaurant de Prestige | Dakar
             </span>
           </motion.div>
           
           <h1 className="text-6xl sm:text-7xl md:text-9xl font-serif leading-[0.85] mb-10 tracking-tighter text-brand-black">
-            Le Goût <br />
-            <span className="text-brand-red italic">Authentique</span> <br />
+            L'Art de la <br />
+            <span className="text-brand-red italic">Gourmandise</span> <br />
             <span className="relative inline-block">
-              Brasil Burger
+              Caramel Dakar
               <svg className="absolute -bottom-2 left-0 w-full h-3 text-brand-red/20 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0 5 Q 25 0, 50 5 T 100 5" fill="none" stroke="currentColor" strokeWidth="8" />
               </svg>
@@ -50,7 +49,7 @@ export default function Hero() {
           </h1>
           
           <p className="text-lg text-gray-500 max-w-md mb-12 leading-relaxed font-medium">
-            Découvrez l'authenticité des burgers brésiliens à Dakar. Des ingrédients frais, une viande savoureuse et des recettes uniques qui vous feront voyager.
+            Une expérience sensorielle unique où l'excellence de la pâtisserie fine rencontre le raffinement de la gastronomie au cœur de Dakar.
           </p>
           
           <div className="flex flex-wrap gap-6">
@@ -85,8 +84,8 @@ export default function Hero() {
         >
           <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.3)] border-[12px] border-white transform lg:rotate-2 hover:rotate-0 transition-transform duration-700 ease-out">
             <img
-              src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=1000"
-              alt="Signature Burger - Brasil Burger"
+              src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=1000"
+              alt="Signature Pastry - Caramel Dakar"
               className="w-full aspect-[4/5] object-cover scale-105 hover:scale-100 transition-transform duration-1000"
               referrerPolicy="no-referrer"
             />
@@ -103,13 +102,13 @@ export default function Hero() {
                 <div key={s} className="w-3 h-3 bg-brand-gold rounded-full" />
               ))}
             </div>
-            <p className="text-brand-black font-serif font-bold text-lg italic leading-tight mb-2">"Le meilleur burger gourmet que j'ai goûté à Dakar !"</p>
-            <p className="text-[10px] text-gray-400 uppercase tracking-widest font-bold">— Client Fidèle</p>
+            <p className="text-brand-black font-serif font-bold text-lg italic leading-tight mb-2">"L'excellence de la pâtisserie fine à Dakar."</p>
+            <p className="text-[10px] text-gray-400 uppercase tracking-widest font-bold">— Guide Gastronomique</p>
           </motion.div>
           
           {/* Decorative Background Elements */}
           <div className="absolute -top-20 -right-20 w-64 h-64 bg-brand-red/10 rounded-full blur-3xl -z-10 animate-pulse" />
-          <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-brand-gold/10 rounded-full blur-3xl -z-10 animate-pulse delay-1000" />
+          <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-brand-red/10 rounded-full blur-3xl -z-10 animate-pulse delay-1000" />
         </motion.div>
       </div>
     </section>
