@@ -25,7 +25,7 @@ const menuItems = [
     name: "La Pistache Royale",
     description: "Glace artisanale à la pistache d'Iran, éclats de pistaches torréfiées.",
     price: "4.500 FCFA",
-    image: "https://images.unsplash.com/photo-1501443762994-82bd5dabb892?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 3,
