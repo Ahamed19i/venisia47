@@ -1,3 +1,4 @@
+
 import { motion } from 'motion/react';
 import { Heart, Users, Clock, MapPin } from 'lucide-react';
 
@@ -27,7 +28,7 @@ export default function About() {
                 referrerPolicy="no-referrer"
               />
               <img
-                src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=400"
+                src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=400"
                 alt="Pâtisserie Fine"
                 className="rounded-3xl shadow-lg"
                 referrerPolicy="no-referrer"

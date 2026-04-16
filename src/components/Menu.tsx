@@ -17,7 +17,7 @@ const menuItems = [
     name: "L'Éclair au Caramel",
     description: "Pâte à chou légère, crème onctueuse au caramel beurre salé et glaçage miroir.",
     price: "3.500 FCFA",
-    image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 2,
@@ -41,7 +41,7 @@ const menuItems = [
     name: "Mille-Feuille Vanille",
     description: "Feuilletage inversé croustillant, crème diplomate à la vanille de Madagascar.",
     price: "4.000 FCFA",
-    image: "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const menuItems = [
     name: "Cappuccino Caramel",
     description: "Espresso intense, mousse de lait veloutée et filet de caramel maison.",
     price: "3.000 FCFA",
-    image: "https://images.unsplash.com/photo-1541167760496-162955ed8a9f?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const menuItems = [
     name: "Sorbet Framboise",
     description: "Sorbet plein fruit à la framboise sauvage, fraîcheur intense.",
     price: "4.000 FCFA",
-    image: "https://images.unsplash.com/photo-1558538337-aab544368de8?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&q=80&w=800",
   }
 ];
 

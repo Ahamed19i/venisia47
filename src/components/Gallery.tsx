@@ -1,3 +1,4 @@
+
 import { motion } from 'motion/react';
 
 const galleryImages = [
@@ -11,7 +12,7 @@ const galleryImages = [
     id: 2,
     title: "Pâtisseries Fines",
     category: "Signature",
-    image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=1200",
+    image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=1200",
   },
   {
     id: 3,
@@ -23,19 +24,19 @@ const galleryImages = [
     id: 4,
     title: "L'Art du Café",
     category: "Barista",
-    image: "https://images.unsplash.com/photo-1541167760496-162955ed8a9f?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 5,
     title: "Détails Sucrés",
     category: "Gourmet",
-    image: "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 6,
     title: "Service d'Exception",
     category: "Prestige",
-    image: "https://images.unsplash.com/photo-1550966841-3ee5ad60d0d9?auto=format&fit=crop&q=80&w=1200",
+    image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80&w=1200",
   },
   {
     id: 7,

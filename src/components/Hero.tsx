@@ -1,3 +1,4 @@
+
 import { motion } from 'motion/react';
 import { ArrowRight, ShoppingBag } from 'lucide-react';
 
@@ -7,8 +8,8 @@ export default function Hero() {
       {/* Background Pattern/Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=1920"
-          alt="Venisia Dakar Ambiance"
+          src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=1920"
+          alt="Caramel Dakar Ambiance"
           className="w-full h-full object-cover opacity-[0.03]"
           referrerPolicy="no-referrer"
         />
@@ -84,7 +85,7 @@ export default function Hero() {
         >
           <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.3)] border-[12px] border-white transform lg:rotate-2 hover:rotate-0 transition-transform duration-700 ease-out">
             <img
-              src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=1000"
+              src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=1000"
               alt="Signature Pastry - Caramel Dakar"
               className="w-full aspect-[4/5] object-cover scale-105 hover:scale-100 transition-transform duration-1000"
               referrerPolicy="no-referrer"
